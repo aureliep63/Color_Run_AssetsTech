@@ -1,10 +1,473 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Color Run ! </h1>
-</body>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>
+			Inscrivez-vous à la Color Run : Courez, Riez, et Soyez Éclaboussés
+			de Couleurs !
+		</title>
+		<!-- libs & fonts -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oi&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav class="container mx-auto navbar bg-base-100 items-center">
+			<div class="navbar-start">
+				<a
+					class="btn btn-ghost lg:hover:bg-transparent normal-case text-xl items-center"
+					href="#"
+				>
+					<img
+						src="img/logo.png"
+						alt="Logo"
+						class="h-12 lg:h-20 w-auto mr-2"
+					/>
+				</a>
+			</div>
+			<div class="navbar-end">
+				<div class="dropdown static lg:hidden flex align-center">
+					<label tabindex="0" class="btn btn-ghost">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-5 w-5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							/>
+						</svg> </label
+					><a class="btn btn-primary" href="#s-inscrire"
+						>S’inscrire</a
+					>
+					<ul
+						tabindex="0"
+						class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-full left-0 top-16 z-50"
+					>
+						<li><a href="#accueil">Accueil</a></li>
+						<li><a href="#concept">Concept</a></li>
+						<li><a href="#agenda">Agenda</a></li>
+						<li>
+							<a href="#join">Devenir bénévole</a>
+						</li>
+						<li>
+							<a class="btn btn-outline my-4" href="#se-connecter"
+								>Se connecter</a
+							>
+						</li>
+					</ul>
+				</div>
+				<ul
+					class="menu menu-horizontal hidden lg:flex items-center space-x-4"
+				>
+					<li><a href="#accueil">Accueil</a></li>
+					<li><a href="#concept">Concept</a></li>
+					<li><a href="#agenda">Agenda</a></li>
+					<li><a href="#join">Devenir bénévole</a></li>
+					<li>
+						<a class="btn btn-outline" href="#se-connecter"
+							>Se connecter</a
+						>
+					</li>
+					<li>
+						<a class="btn btn-primary" href="#s-inscrire"
+							>S’inscrire</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<header class="hero bg-base-200 py-10">
+			<div class="hero-content flex-col lg:flex-row-reverse">
+				<img
+					src="img/illustrationphoto.png"
+					alt="Color Run"
+					class="max-w-md rounded-lg hidden lg:block"
+				/>
+				<div>
+					<h1 class="text-4xl md:text-5xl">
+						Venez vivre l’expérience unique de la
+						<span
+							class="inline-block p-2 text-white rounded-lg bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
+						>
+							Color Run
+						</span>
+						dans votre ville.
+					</h1>
+					<p class="py-6">
+						Rejoignez une explosion de couleurs, de fun et d'énergie
+						! La Color Run, c’est bien plus qu’une course : c’est
+						une fête où chaque kilomètre devient un arc-en-ciel de
+						bonheur. Que vous soyez coureur aguerri ou amateur de
+						bonne humeur, vous êtes au bon endroit.
+					</p>
+					<div class="flex space-x-4">
+						<a href="#decouvrir-courses" class="btn btn-secondary"
+							>Découvrir les courses</a
+						>
+						<a href="#inscription" class="btn btn-primary"
+							>Inscrivez-vous maintenant</a
+						>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section
+				id="concept"
+				class="py-20 container mx-auto px-4 text-center"
+			>
+				<h2 class="text-4xl mb-6">
+					Découvrez le concept de la Color Run
+				</h2>
+				<p class="mb-6">
+					La Color Run est une course festive et accessible à tous, où
+					le chrono n’a aucune importance.<br />Laissez-vous emporter
+					par une vague de couleurs à chaque kilomètre et terminez
+					l’épreuve dans une ambiance de fête.
+				</p>
+				<p
+					class="bg-accent text-white font-bold p-3 animate-bounce mb-4 inline-flex rounded-lg"
+				>
+					Une seule règle : porter du blanc au départ et finir
+					complètement coloré !
+				</p>
+				<p class="text-2xl my-4 font-oi">Pourquoi participer&nbsp;?</p>
+				<ul
+					class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+				>
+					<li class="flex flex-col items-center">
+						<img
+							src="img/convivial.svg"
+							alt="Ambiance fun et conviviale"
+							class="w-36 h-36"
+						/>
+						<h3 class="font-ws font-bold">
+							Une ambiance fun et conviviale.
+						</h3>
+					</li>
+					<li class="flex flex-col items-center">
+						<img
+							src="img/happy.svg"
+							alt="Aucune pression, juste du plaisir"
+							class="w-36 h-36"
+						/>
+						<h3 class="font-ws font-bold">
+							Aucune pression, juste du plaisir.
+						</h3>
+					</li>
+					<li class="flex flex-col items-center">
+						<img
+							src="img/tous ages.svg"
+							alt="Accessible à tous les âges et niveaux"
+							class="w-36 h-36"
+						/>
+						<h3 class="font-ws font-bold">
+							Accessible à tous les âges et niveaux.
+						</h3>
+					</li>
+				</ul>
+			</section>
+			<!-- fin #concept -->
+
+			<section
+				id="agenda"
+				class="container mx-auto px-4 lg:px-16 md:rounded-2xl shadow-2xl bg-primary text-white lg:text-[oklch(var(--n))] md:bg-white py-12 text-center"
+			>
+				<h2 class="text-4xl mb-6">Nos prochaines étapes colorées</h2>
+				<p class="mb-6">
+					La Color Run voyage dans toute la France ! Voici les villes
+					où nous poserons nos valises prochainement :
+				</p>
+				<div
+					class="text-neutral grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+				>
+					<!-- CES CARDS SONT A GENERER DYNAMIQUEMENT VIA LA BDD
+						 ON AFFICHE LES PROCHAINES DATES A VENIR LES PLUS PROCHES -->
+					<article
+						class="card bg-base-200 hover:scale-105 hover:shadow-xl transition-transform"
+					>
+						<a href="#participer-embrun" class="block h-full">
+							<figure>
+								<img
+									src="img/photo/embrun.jpg"
+									alt="Embrun"
+									class="w-full h-48 object-cover rounded-t-2xl"
+								/>
+							</figure>
+							<div class="card-body items-start">
+								<h3 class="card-title">Embrun</h3>
+								<p>Dimanche 12 mai 2025</p>
+								<p>
+									5km -
+									<span class="badge badge-outline"
+										>avec obstacles</span
+									>
+								</p>
+								<div class="card-actions self-end">
+									<span class="btn btn-primary"
+										>Participer</span
+									>
+								</div>
+								<!-- .card-actions -->
+							</div>
+							<!-- .card-body -->
+						</a>
+					</article>
+					<article
+						class="card bg-base-200 hover:scale-105 hover:shadow-xl transition-transform"
+					>
+						<a href="#participer-lyon" class="block h-full">
+							<figure>
+								<img
+									src="img/photo/Lyon.avif"
+									alt="Lyon"
+									class="w-full h-48 object-cover rounded-t-2xl"
+								/>
+							</figure>
+							<div class="card-body items-start">
+								<h3 class="card-title">Lyon</h3>
+								<p>Dimanche 2 juin 2025</p>
+								<p>10km</p>
+								<div class="card-actions self-end">
+									<span class="btn btn-primary"
+										>Participer</span
+									>
+								</div>
+								<!-- .card-actions -->
+							</div>
+							<!-- .card-body -->
+						</a>
+					</article>
+					<article
+						class="card bg-base-200 hover:scale-105 hover:shadow-xl transition-transform"
+					>
+						<a href="#participer-marseille" class="block h-full">
+							<figure>
+								<img
+									src="img/photo/marseille.jpg"
+									alt="Marseille"
+									class="w-full h-48 object-cover rounded-t-2xl"
+								/>
+							</figure>
+							<div class="card-body items-start">
+								<h3 class="card-title">Embrun</h3>
+								<p>Dimanche 26 juillet 2025</p>
+								<p>20km</p>
+								<div class="card-actions self-end">
+									<span class="btn btn-primary"
+										>Participer</span
+									>
+								</div>
+								<!-- .card-actions -->
+							</div>
+							<!-- .card-body -->
+						</a>
+					</article>
+				</div>
+				<div class="mt-6 text-center">
+					<a href="#voir-plus-evenements" class="btn btn-secondary"
+						>Voir plus d’événements</a
+					>
+				</div>
+			</section>
+			<!-- #agenda -->
+
+			<section id="enroll" class="py-12 mt-12 container mx-auto px-4">
+				<div class="flex flex-col lg:flex-row items-center">
+					<!-- Image à gauche -->
+					<div class="w-2/3 lg:w-1/3 mb-10 lg:mb-0">
+						<img
+							src="img/final.png"
+							alt="Participants à la Color Run"
+							class="w-full h-auto"
+						/>
+					</div>
+					<!-- Texte à droite -->
+					<div class="lg:w-2/3 w-full lg:pl-16">
+						<h2 class="text-3xl mb-4">
+							Rejoignez l’aventure&nbsp;!
+						</h2>
+						<p class="mb-4">
+							Prêt à vivre une expérience unique ? Inscrivez-vous
+							en quelques clics et préparez-vous à une journée
+							mémorable. Voici ce que vous recevez en participant
+							:
+						</p>
+						<ul class="list-disc list-inside mb-4">
+							<li>
+								<span class="font-bold"
+									>Un kit de bienvenue</span
+								>
+								comprenant un t-shirt blanc officiel, un
+								dossard, et des sacs de poudre colorée.
+							</li>
+							<li>
+								<span class="font-bold"
+									>Une médaille souvenir</span
+								>
+								pour célébrer votre exploit.
+							</li>
+							<li>
+								<span class="font-bold"
+									>L’accès à l’after-party</span
+								>, où musique et couleurs seront au rendez-vous.
+							</li>
+						</ul>
+						<p class="mb-4">
+							Alors, qu’attendez-vous ? Faites partie des milliers
+							de coureurs qui partagent cette aventure incroyable
+							!
+						</p>
+						<div class="flex flex-col sm:flex-row gap-4">
+							<a href="#inscription" class="btn btn-primary"
+								>S’inscrire maintenant</a
+							>
+							<a href="#en-savoir-plus" class="btn btn-secondary"
+								>En savoir plus sur l’inscription</a
+							>
+						</div>
+						<!-- .lg:w-2/3.w-full.lg:pl-16 -->
+					</div>
+					<!-- .flex.flex-col.lg:flex-row.items-center -->
+				</div>
+			</section>
+			<!-- #enroll -->
+
+			<section id="join" class="container mx-auto px-4 py-12">
+				<div class="flex flex-col-reverse lg:flex-row items-center">
+					<!-- Texte à gauche -->
+					<div class="lg:w-2/3 w-full lg:pr-12">
+						<h2 class="text-3xl mb-4">
+							Devenez un héros de la Color Run
+						</h2>
+						<p class="mb-4">
+							Envie de faire partie de l’envers du décor ?
+							Rejoignez notre équipe de bénévoles et participez à
+							l’organisation d’un événement inoubliable ! En tant
+							que bénévole, vous pourrez :
+						</p>
+						<ul class="list-disc list-inside mb-4">
+							<li>Accueillir et guider les participants.</li>
+							<li>
+								Animer les zones colorées et assurer une
+								ambiance de folie.
+							</li>
+							<li>
+								Distribuer des kits ou des rafraîchissements.
+							</li>
+							<li>
+								Partager des moments uniques avec l’équipe et
+								les coureurs.
+							</li>
+						</ul>
+						<p class="mb-4">
+							En échange, vous vivrez une expérience enrichissante
+							et recevrez un kit souvenir pour votre engagement.
+							Merci de votre aide précieuse !
+						</p>
+						<div class="flex flex-col sm:flex-row gap-4">
+							<a href="#rejoindre-equipe" class="btn btn-primary"
+								>Rejoindre l’équipe bénévole</a
+							>
+							<a href="#en-savoir-plus" class="btn btn-secondary"
+								>En savoir plus sur le bénévolat</a
+							>
+						</div>
+					</div>
+					<!-- Image à droite -->
+					<div class="w-2/3 lg:w-1/3 mb-10 lg:mb-0">
+						<img
+							src="img/benevole.png"
+							alt="Bénévoles de la Color Run"
+							class="w-full h-auto"
+						/>
+					</div>
+				</div>
+			</section>
+			<!-- #join -->
+		</main>
+
+		<footer class="bg-accent text-accent-content py-10">
+			<div class="container mx-auto px-4">
+				<div class="flex flex-col md:flex-row justify-between mb-8">
+					<!-- Logo -->
+					<div class="w-full md:w-auto">
+						<img
+							src="img/logo.png"
+							alt="Logo Color Run"
+							class="h-16"
+						/>
+					</div>
+					<!-- Liens utiles -->
+					<div class="w-full md:w-auto mb-6 md:mb-0">
+						<h2 class="footer-title font-normal text-primary">
+							Liens utiles
+						</h2>
+						<ul class="list-none">
+							<li>
+								<a href="#faq" class="link link-hover">FAQ</a>
+							</li>
+							<li>
+								<a href="#contact" class="link link-hover"
+									>Nous contacter</a
+								>
+							</li>
+							<li>
+								<a
+									href="#mentions-legales"
+									class="link link-hover"
+									>Mentions légales</a
+								>
+							</li>
+						</ul>
+					</div>
+					<!-- Newsletter -->
+					<div class="w-full md:w-auto mb-6 md:mb-0">
+						<h2 class="footer-title font-normal text-primary">
+							Inscrivez-vous à notre newsletter
+						</h2>
+						<p class="mb-4">
+							Recevez les dernières actualités et offres
+							exclusives.
+						</p>
+						<form>
+							<input
+								type="email"
+								placeholder="exemple@gmail.com"
+								class="input input-bordered w-full mb-2"
+								required
+							/>
+							<button
+								type="submit"
+								class="btn btn-primary w-full"
+							>
+								S’inscrire
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- À propos -->
+				<div class="text-center">
+					<p>2025 © Color Run par AH & FX. Tous droits réservés.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

@@ -1,0 +1,15 @@
+body,
+h3,
+.font-ws {
+	font-family: "Work Sans", serif;
+}
+h1,
+h2,
+.font-oi {
+	font-family: "Oi", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+html {
+	scroll-behavior: smooth;
+}
