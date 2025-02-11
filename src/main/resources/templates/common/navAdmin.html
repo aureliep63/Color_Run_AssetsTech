@@ -1,0 +1,67 @@
+<div class="container mx-0 navbar bg-base-100 items-center" th:fragment="navAdmin" xmlns:th="http://www.thymeleaf.org">
+    <div class="navbar-start">
+        <a
+                class="btn btn-ghost lg:hover:bg-transparent normal-case text-xl items-center"
+                th:href="@{/}"
+        >
+            <img
+                    th:src="@{/img/logo.png}"
+                    alt="Logo"
+                    class="h-12 lg:h-20 w-auto mr-2"
+            />
+        </a>
+    </div>
+    <div class="navbar-end">
+        <div class="dropdown static lg:hidden flex align-center">
+            <label tabindex="0" class="btn btn-ghost">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                >
+                    <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                    />
+                </svg> </label
+
+        >
+            <ul
+                    tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-full left-0 top-16 z-50"
+            >
+                <li><a th:href="@{/}">Accueil</a></li>
+                <li><a th:href="@{/vueParticipants}">Participant</a></li>
+                <li><a th:href="@{/vueCourses}">Courses</a></li>
+                <li>
+                    <a href="#role">Les rôles</a>
+                </li>
+                <li>
+                    <a class="btn btn-outline my-4" th:href="@{auth/logout}"
+                    >Se déconnecter</a
+                    >
+                </li>
+            </ul>
+        </div>
+        <ul
+                class="menu menu-horizontal hidden lg:flex items-center space-x-4"
+        >
+            <li><a th:href="@{/}">Accueil</a></li>
+            <li><a th:href="@{/vueParticipants}">Participant</a></li>
+            <li><a th:href="@{/vueCourses}">Courses</a></li>
+            <li>
+                <a href="#role">Les rôles</a>
+            </li>
+            <li>
+                <a class="btn btn-outline my-4" th:href="@{auth/logout}"
+                >Se déconnecter</a
+                >
+            </li>
+
+        </ul>
+    </div>
+</div>
